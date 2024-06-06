@@ -1,0 +1,6 @@
+.ui-content > div[data-role="header"] {
+    border-radius: 20px;
+}
+label{
+    margin-bottom: 20px;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="lib/jquery.mobile.icons-1.4.5.css" />
+    <link rel="stylesheet" href="lib/jquery.mobile.structure-1.4.5.css" />
+    <link rel="stylesheet" href="lib/myTheme.css" />
+    <!--<link rel="stylesheet" href="lib/jquery.mobile-1.4.5.min.css" />-->
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/index.js"></script>
+    <title>To Do List App</title>
+    <style>
+        .completed {
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+    <div data-role="page">
+
+        <div data-role="header" data-theme="a">
+            <h1>ToDo List</h1>
+        </div>
+
+        <div role="main" class="ui-content">
+            <form>
+                <label for="task"> Ajouter une tache</label>
+                <input type="text" id="task">
+                <input type="button" value="Ajouter" onclick="ajouterTache()">
+                <input type="button" value="Reinitialiser" onclick="reinitialiserTache()">
+            </form>
+            <div data-role="header" data-theme="b">
+                <h1>En cours</h1>
+            </div>
+            <ul id="taskList" data-role="listview" data-inset="true">
+                
+            </ul>
+
+            <div data-role="header" data-theme="c">
+                <h1>Terminées</h1>
+            </div>
+            <ul id="completedTaskList" data-role="listview" data-inset="true">
+                
+            </ul>
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <h4>Cheikh Ba - M2GLSI &copy; 2024</h4>
+        </div>
+
+    </div>
+</body>
+</html>
